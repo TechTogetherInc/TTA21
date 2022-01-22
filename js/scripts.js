@@ -210,7 +210,28 @@ window.addEventListener('DOMContentLoaded', event => {
     requestAnimationFrame(render);
 
 
-
+//schedule
+  function scheduleBar() {
+    var fri = document.querySelector('#fritogglecontainer');
+    var sat = document.querySelector('#sattogglecontainer');
+    var sun = document.querySelector('#suntogglecontainer');
+    document.querySelector('#fritoggle').onclick = function(){
+      fri.classList.add('active-day');
+      sat.classList.remove('active-day');
+      sun.classList.remove('active-day');
+    };
+    document.querySelector('#sattoggle').onclick = function(){
+      fri.classList.remove('active-day');
+      sat.classList.add('active-day');
+      sun.classList.remove('active-day');
+    };
+    document.querySelector('#suntoggle').onclick = function(){
+      fri.classList.remove('active-day');
+      sun.classList.add('active-day');
+      sat.classList.remove('active-day');
+    };
+  };
+  window.addEventListener("click", scheduleBar);
 
 
 });
