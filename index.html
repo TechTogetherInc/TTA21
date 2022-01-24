@@ -176,20 +176,87 @@
             <h1 class="header text-center text-yellow text-uppercase" id="schedule">Schedule</h1>
             <div class="schedule-container">
               <ul class="nav nav-tabs nav-fill">
-                  <li class="nav-item schedule-toggler active-day" id="fritogglecontainer">
-                      <a href="#fri" style="text-decoration: none" id="fritoggle" class="active link text-purple" data-bs-toggle="tab"><span style="font-size: 13px; margin-right: 2px;">FRI</span> January 28</a>
+                  <li class="nav-item schedule-toggler active-day" id="thurtogglecontainer">
+                      <a href="#thur" style="text-decoration: none" id="thurtoggle" class="active link text-purple" data-bs-toggle="tab"><span style="font-size: 13px; margin-right: 2px;">THUR</span> Jan 27</a>
+                  </li>
+                  <li class="nav-item schedule-toggler" id="fritogglecontainer">
+                      <a href="#fri" style="text-decoration: none" id="fritoggle" class="link text-purple" data-bs-toggle="tab"><span style="font-size: 13px; margin-right: 2px;">FRI</span> Jan 28</a>
                   </li>
                   <li class="nav-item schedule-toggler" id="sattogglecontainer">
-                      <a href="#sat" style="text-decoration: none" id="sattoggle" class="link text-purple" data-bs-toggle="tab"><span style="font-size: 13px; margin-right: 2px;">SAT</span> January 29</a>
+                      <a href="#sat" style="text-decoration: none" id="sattoggle" class="link text-purple" data-bs-toggle="tab"><span style="font-size: 13px; margin-right: 2px;">SAT</span> Jan 29</a>
                   </li>
                   <li class="nav-item schedule-toggler" id="suntogglecontainer">
-                      <a href="#sun" style="text-decoration: none" id="suntoggle" class="link text-purple" data-bs-toggle="tab"><span style="font-size: 13px; margin-right: 2px;">SUN</span> January 30</a>
+                      <a href="#sun" style="text-decoration: none" id="suntoggle" class="link text-purple" data-bs-toggle="tab"><span style="font-size: 13px; margin-right: 2px;">SUN</span> Jan 30</a>
                   </li>
               </ul>
               <div class="tab-content">
 
+                <!-- Thursday Activities -->
+                <div class="tab-pane fade show active" id="thur">
+                  <div class="schedule-event" data-bs-toggle="modal" href="#event-01">
+                  <div class="event-time">7:00 PM -<br>7:30 PM</div>
+                  <div class="event-name">Hackathon 101</div>
+                  <div class="event-type minievent">Mini-Event</div>
+                  </div>
+                  <div class="modal fade" id="event-01" tabindex="-1" role="dialog" aria-labelledby="event-01label" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <div class="modal-title event-modal-title" id="event-01label">Hackathon 101</div>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          Join in to learn the basics for Hackathons!
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="schedule-event" data-bs-toggle="modal" href="#event-02">
+                  <div class="event-time">8:00 PM -<br>9:00 PM</div>
+                  <div class="event-name">How to Use the Cloud in Your Hackathon Project - Sponsored by Microsoft</div>
+                  <div class="event-type workshop">Workshop</div>
+                  </div>
+                  <div class="modal fade" id="event-02" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <div class="modal-title event-modal-title" id="event-02label">How to Use the Cloud in Your Hackathon Project - Sponsored by Microsoft</div>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          I've been to a lot of hackathons, but I've never used the cloud in any of my projects. Why? Because it always seemed too complicated and scary to tackle during a hackathon.This workshop is designed to help you conquer those fears by answering the following questions: What is the cloud? How can I use it in my hackathon project? What types of projects can I create with cloud technology? What free resources are available to help me get started? What if I get stuck? Use the skills you learn in this workshop at one of TechTogether's upcoming hackathons. This workshop is co-hosted with Microsoft, TechTogether's official Cloud Partner of our 2021-2022 hackathon season.
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="schedule-event" data-bs-toggle="modal" href="#event-03">
+                  <div class="event-time">9:00 PM -<br>9:30 PM</div>
+                  <div class="event-name">Team Formation</div>
+                  <div class="event-type minievent">Mini-Event</div>
+                  </div>
+                  <div class="modal fade" id="event-03" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <div class="modal-title event-modal-title" id="event-03label">Team Formation</div>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          Join to find your dream team for this weekend!
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
                 <!-- Friday Activities -->
-                <div class="tab-pane fade show active" id="fri">
+                <div class="tab-pane fade" id="fri">
                   <div class="schedule-event" data-bs-toggle="modal" href="#event01">
                   <div class="event-time">4:00 PM -<br>5:00 PM</div>
                   <div class="event-name">Career Fair</div>
@@ -779,7 +846,9 @@
                 </div>
               </div>
             </div>
-            <div class="text-center text-light" style="padding-top: 15px">Click to view a description of each event above. All times are displayed in EST.</div>
+            <div class="text-center text-yellow" style="padding-top: 15px">Click to view a description of each event above. All times are displayed in EST.</div>
+            <div class="text-center">
+            <a class="footer-link" style="font-size: 13px"  href="https://drive.google.com/drive/folders/1MUclApbB23oSEksWHKB9lQoY52XkW4Yu?usp=sharing">Click here to view event recordings.</a>
           </div>
         </section>
 
