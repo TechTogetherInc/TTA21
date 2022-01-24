@@ -212,27 +212,36 @@ window.addEventListener('DOMContentLoaded', event => {
 
 //schedule
   function scheduleBar() {
+    var thur = document.querySelector('#thurtogglecontainer');
     var fri = document.querySelector('#fritogglecontainer');
     var sat = document.querySelector('#sattogglecontainer');
     var sun = document.querySelector('#suntogglecontainer');
+    document.querySelector('#thurtoggle').onclick = function(){
+      thur.classList.add('active-day');
+      fri.classList.remove('active-day');
+      sat.classList.remove('active-day');
+      sun.classList.remove('active-day');
+    };
     document.querySelector('#fritoggle').onclick = function(){
+      thur.classList.remove('active-day');
       fri.classList.add('active-day');
       sat.classList.remove('active-day');
       sun.classList.remove('active-day');
     };
     document.querySelector('#sattoggle').onclick = function(){
+      thur.classList.remove('active-day');
       fri.classList.remove('active-day');
       sat.classList.add('active-day');
       sun.classList.remove('active-day');
     };
     document.querySelector('#suntoggle').onclick = function(){
+      thur.classList.remove('active-day');
       fri.classList.remove('active-day');
-      sun.classList.add('active-day');
       sat.classList.remove('active-day');
+      sun.classList.add('active-day');
     };
   };
   window.addEventListener("click", scheduleBar);
-
 
 });
 
